@@ -96,7 +96,9 @@ $_SESSION['sesion'] == '';
 				$json = (JSON.parse(response));
 
 				if($json.redirect == "yes"){
-					window.location.replace("/app/");
+					//window.location.replace("/app/"); //PARA USAR CON EL BOT DE TWITCH
+					window.location.replace("/control/");
+
 				}
 				else{
 					document.getElementById("error").innerHTML = "Contraseña incorrecta";
